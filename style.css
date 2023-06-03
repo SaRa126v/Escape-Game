@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    background-image: url(assets/background.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#egg {
+    width: fit-content;
+}
+
+#egg > img {
+    width: 50px;
+}
