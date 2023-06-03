@@ -1,15 +1,18 @@
 let number =5;
-number.addEventListener("click", start);
+window.addEventListener("onclick",start);
 function start(){
     if(number){
         let Decreas =
         document.getElementById("number");
         number --;
         Decreas.innerHTML =number;
-    }else(
-        alert("gameover")
-    )
+    }else if(number ==0){
+        let message =
+        document.getElementById("messagebox");
+        message.style.display ="block"
+    }else if(number ==0){
+        document.getElementById("resets<").reset();
+    }
 }
-
 // Decrease
 // Increase

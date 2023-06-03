@@ -4,11 +4,17 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <button id="count" onClick="start('number')">کم شدن</button>
+        <button id="count" onClick="start()">کم شدن</button>
+        <form id="resets">
         <div id="box">
             <span id="number">5</span>
         </div>
-        <img id="heart" src="project img/Untitled.png"/>
+        <img id="heart" src="project img/Untitled.png">
+        <div id="messagebox">
+            <span id="text">gameover</span>
+            <button id="reset" onClick="reset()">دوباره</button>
+        </div>
+    </form>
     </body>
     <script src="app.js"></script>
 </HTML>
