@@ -1,0 +1,112 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+  }
+  
+  .ball {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .speed-controller {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 50px;
+  }
+  
+  .speed-controller span {
+    margin-right: 10px;
+  }
+  
+  .speed-controller input {
+    width: 100px;
+    margin-right: 10px;
+  }
+  
+  .speed-value {
+    font-weight: bold;
+  }
+
+  .lives {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .lives span {
+    margin-right: 10px;
+  }
+  
+  .lives-value {
+    font-weight: bold;
+  }
+
+  .gameover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .gameover span {
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+  }
+
+  .heart {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: url('heart.png') no-repeat;
+    background-size: 100%;
+  }
+  
+  .heart div {
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: left;
+    transform: rotate(45deg);
+  }
+  
+  .heart div:nth-child(1) {
+    transform: rotate(45deg);
+  }
+  
+  .heart div:nth-child(2) {
+    transform: rotate(90deg);
+  }
+  
+  .heart div:nth-child(3) {
+    transform: rotate(135deg);
+  }
+  
+  .heart div:nth-child(4) {
+    transform: rotate(180deg);
+  }
+  
+  .heart div:nth-child(5) {
+    transform: rotate(225deg);
+  }
