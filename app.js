@@ -33,7 +33,7 @@ switch (e.key) {
 // speed up with limitation
 document.querySelector('#addBtn').addEventListener('click', ()=> {
    if (pace < 100 ) {
-      pace = pace + 10;     
+      pace += 10;     
    }
   
 })
@@ -44,5 +44,19 @@ document.querySelector('#substractBtn').addEventListener('click', ()=> {
       pace = pace - 10;    
    }
    
+})
+
+// speeding up with shortcut 
+document.addEventListener('keydown', (e)=> {
+   // prevent default shortcut 
+   e.preventDefault();
+   // upercase to lowercase if any
+   if (e.key.toLowerCase() === "x") {
+
+      if (pace < 100 ) {
+         pace += 10;           
+      }    
+      
+   }
 })
 
