@@ -48,6 +48,22 @@ header {
     margin: -55px 68px;
 }
 
+#count{
+    background-color: rgba(0, 128, 0, 0.479);
+    height: 60px;
+    width: 140px;
+    border-radius: 10px;
+    margin: 10px 80px;
+}
+
+#number{
+    display: inline-block;
+    margin: 15px 28px;
+    font-family: arial;
+    font-size: 24px;
+    color: white;
+}
+
 /* egg container.................................. */
 
 #container {
@@ -65,22 +81,6 @@ header {
 
 #egg>img {
     width: 50px;
-}
-
-#count{
-    background-color: rgba(0, 128, 0, 0.479);
-    height: 60px;
-    width: 140px;
-    border-radius: 10px;
-    margin: 10px 80px;
-}
-
-#number{
-    display: inline-block;
-    margin: 15px 28px;
-    font-family: arial;
-    font-size: 24px;
-    color: white;
 }
 
 #messagebox{
