@@ -44,7 +44,8 @@ header {
 }
 
 #heart img {
-    width: 70px;
+    width: 60px;
+    margin: -55px 68px;
 }
 
 /* egg container.................................. */
@@ -64,4 +65,56 @@ header {
 
 #egg>img {
     width: 50px;
+}
+
+#count{
+    background-color: rgba(0, 128, 0, 0.479);
+    height: 60px;
+    width: 140px;
+    border-radius: 10px;
+    margin: 10px 80px;
+}
+
+#number{
+    display: inline-block;
+    margin: 15px 28px;
+    font-family: arial;
+    font-size: 24px;
+    color: white;
+}
+
+#messagebox{
+  display: none;  
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 659px;
+  width: 1366px;
+  margin-top: -690px;
+  position: absolute;
+}
+
+#message{
+    display: inline-block;
+    background-color: white;
+    height: 40px;
+    margin-top: 240px;
+    margin-left: 348px;
+    padding-top: 10px;
+    padding-right: 280px;
+    padding-left: 240px;
+    font-family: arial;
+    font-size: 18px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+#reset{
+    margin: 310px 550px;
+  background-color: rgb(0, 119, 255);
+  height: 38px;
+  width: 180px;
+  color: white;
+  font-family: arial;
+  font-size: 24px;
+  border-radius: 4px;
+  border: none;
 }

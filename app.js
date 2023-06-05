@@ -60,3 +60,20 @@ document.addEventListener('keydown', (e)=> {
    }
 })
 
+//*Decreas In The Number Of Heart and Message
+
+let number =5;
+window.addEventListener("onclick",Decrea);
+function Decrea(){
+   if(number){
+      let decrea =
+      document.getElementById("number");
+      number--;
+      decrea.innerHTML =number;
+   }else if(number ==0){
+      document.getElementById("messagebox").style.display ="block";
+   }else if(number ==0){
+      
+      document.getElementById("resets").reset();
+   }
+}
