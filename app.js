@@ -5,17 +5,42 @@ let pace = 10;
 // image loading before javascript 
 window.addEventListener('load', (e) => {
    egg.style.position = 'absolute';
-   egg.style.top = 0;
-   egg.style.left = 0;
+   egg.style.top = '20px';
+   egg.style.left = '20px';
 })
+
+
+// not cmpleted yet...
+// restricting the egg to its parent...........
+let eggContainer = document.querySelector('#container');
+
+// naming the method
+let limitedArea = eggContainer.getBoundingClientRect();
+let target = egg.getBoundingClientRect();
+
+   // if ( target.y <= limitedArea.y) {
+   //    console.log(target.y);
+   //    console.log(limitedArea.y);
+   // }
+
+// window.addEventListener('mousemove', (e) =>{
+//  console.log(e.x);
+//  console.log(e.y);
+// })
+// .............................................
+
+
+
 
 // move with arrows on the keyboard
 window.addEventListener('keydown', (e) => {
    switch (e.key) {
       case 'ArrowDown':
-         egg.style.top = parseInt(egg.style.top) + pace + 'px';
-         console.log(egg.style.top);
-         console.log(pace);
+
+            egg.style.top = parseInt(egg.style.top) + pace + 'px';
+            console.log(egg.style.top);
+            console.log(pace);
+
          break;
       case 'ArrowUp':
          egg.style.top = parseInt(egg.style.top) - pace + 'px';
@@ -100,3 +125,5 @@ egg.addEventListener('click', function () {
       document.getElementById("reset").reset();
    }
 });
+
+

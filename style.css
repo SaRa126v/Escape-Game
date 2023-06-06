@@ -5,13 +5,14 @@ body {
     background-size: cover;
     width: 100vw;
     height: 100vh;
+overflow: hidden;
 }
 
 /* game state.................................. */
 
 /* change the cursor */
 /* Start https://www.cursors-4u.com */
-* {cursor: url(https://cur.cursors-4u.net/others/oth-1/oth4.cur), auto !important;} 
+/* * {cursor: url(https://cur.cursors-4u.net/others/oth-1/oth4.cur), auto !important;}  */
 /* End https://www.cursors-4u.com */
 
 header {
@@ -45,16 +46,25 @@ header {
     font-size: 2rem;
     padding: 5px;
     border-radius: 15px;
+    outline: none;
     border: 1px solid rgb(47, 147, 86);
     color: rgb(47, 147, 86);
     width: 40px;
     height: 40px;
+    cursor: pointer;
+    transition: background-color 0.75s;
 }
+
+#paceBtn>button:active {
+    color: whitesmoke;
+    background-color: rgb(47, 147, 86) ;
+}
+
 /* ***************************************************************** */
 
 /****************************** life details *************************/
 #count{
-    background-color: rgba(0, 128, 0, 0.479);
+    background-color:  rgba(47, 147, 85, 0.823);
     height: 60px;
     width: 140px;
     border-radius: 10px;
@@ -102,12 +112,11 @@ header {
 
 /***************************** egg movement *************************/
 #container {
-    margin: 3% auto;
-    /* تخم مرغو به این دیوه محدود کن */
-    /* background-color: rgb(54, 156, 81); */
+    margin: 0 auto;
     width: 95vw;
     height: 80vh;
     position: relative;
+    cursor: url(https://cur.cursors-4u.net/others/oth-1/oth4.cur), auto;
 }
 
 #egg {
@@ -136,6 +145,10 @@ header {
     margin: -150px -40px;
     height: 667px;
     width: 1371.5px;
+}
+
+#gameover > button{
+    cursor: pointer;
 }
 
 #gameover span {
