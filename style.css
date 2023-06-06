@@ -118,7 +118,7 @@ header {
     height: 87vh;
     position: relative;
     cursor: url(https://cur.cursors-4u.net/others/oth-1/oth4.cur), auto;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
 
 #egg {
