@@ -12,12 +12,8 @@ window.addEventListener('load', (e) => {
 
 // not cmpleted yet...
 // restricting the egg to its parent...........
-let eggContainer = document.querySelector('#container');
 
-// naming the method
-let limitedArea = eggContainer.getBoundingClientRect();
-let target = egg.getBoundingClientRect();
-
+// let target = egg.getBoundingClientRect();
    // if ( target.y <= limitedArea.y) {
    //    console.log(target.y);
    //    console.log(limitedArea.y);
@@ -37,10 +33,14 @@ window.addEventListener('keydown', (e) => {
    switch (e.key) {
       case 'ArrowDown':
 
+   // if (  < 500) {
+
             egg.style.top = parseInt(egg.style.top) + pace + 'px';
             console.log(egg.style.top);
             console.log(pace);
+            console.log(target.y);
 
+         // }
          break;
       case 'ArrowUp':
          egg.style.top = parseInt(egg.style.top) - pace + 'px';
@@ -126,4 +126,8 @@ egg.addEventListener('click', function () {
    }
 });
 
-
+// changing the cursor to gif when window is clicked
+// it isn t working
+// window.addEventListener('click', ()=> {
+//    document.querySelector('body').style.cursor = 'url(assets/firework.gif), auto'
+// })
