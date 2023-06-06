@@ -63,23 +63,22 @@ document.addEventListener('keydown', (e)=> {
 const livesValue = document.querySelector('#number');
 const gameover = document.querySelector('#gameover');
 
-let lives = 4;
+let lives = 5;
 egg.addEventListener('click',function(){
    lives--;
       livesValue.textContent = lives;
-   if(lives ==0){
-      gameover.style.display = 'flex';
+   if(lives ==1){
       document.getElementById('heart5').style.display = "block";
-      // document.getElementById("messagebox").style.display ="flex";
-      // document.getElementById("resets").reset();
       document.body.style.overflow = 'hidden';
-   }else if(lives === 1){
+   }else if(lives ==2){
       document.getElementById('heart4').style.display = "block";
-   }else if(lives === 2){
+   }else if(lives == 3){
       document.getElementById('heart3').style.display = "block";
-   }else if(lives === 3){
+   }else if(lives == 4){
       document.getElementById('heart2').style.display = "block";
    }else{
-      lives = 0;
+      gameover.style.display = 'block';
+      lives =1;
+      document.getElementById("reset").reset();
    }
 });

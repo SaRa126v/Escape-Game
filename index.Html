@@ -16,9 +16,10 @@
       <button id="substractBtn">-</button>
     </div>
     <!-- The box of lives -->
+    <form id="resets">
     <div id="count">
       <!-- remain lives -->
-      <span id="number"> 4 </span>
+      <span id="number"> 5 </span>
       <!-- Piece of hearts -->
       <div id="hearts">
         <div id="heart1" class="heart"><img src="assets/black-border/100-percent.png" alt=""></div>
@@ -28,17 +29,17 @@
         <div id="heart5" class="heart"><img src="assets/black-border/0-percent.png" alt=""></div>
       </div>
     </div>
+  </form>
   </header>
   <!-- gameover sign -->
-  <div id="gameover">
-    <span>Game Over!</span>
-    <!-- <div id="messagebox"> -->
-    <!-- <button id="reset">دوباره</button> -->
-    </div>
-  </div>
-    <div id="container">
+  <form id="resets">
+    <div id="container">>
       <!-- lovely egg -->
       <div id="egg"><img src="assets/_08_yellow_egg.png" alt="" onclick="Decrea()" /></div>
+      <div id="gameover">
+        <span>Game Over!</span>
+        <button id="reset" onclick="resets()">دوباره</button>
+      </div>
     </div>
 </body>
 <script src="app.js"></script>
