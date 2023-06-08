@@ -114,11 +114,11 @@ egg.addEventListener('click', function () {
       hurt_sound.play();
 
    } else {
-      gameover.style.display = 'block';
-      lives = 1;
+      lives = 0;
+      resets.style.display = 'block';
 
       // gameOver sound
-      let gameOver_sound = new Audio('assets/sounds/mixkit-game-over-trombone-1940.wav');
+      let gameOver_sound = new Audio('assets/sounds/egg.m4a');
       gameOver_sound.play();
 
       // reset

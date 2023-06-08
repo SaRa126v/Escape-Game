@@ -112,7 +112,7 @@ header {
 /* ***************************************************************** */
 
 /***************************** egg movement *************************/
-#container {
+#container{
     margin: auto;
     width: 99vw;
     height: 87vh;
@@ -129,24 +129,11 @@ header {
     width: 50px;
 }
 
-/* #gameover {
-  display: none;
-  position: absolute;
-  top: -140px;
-  right: 10;
-  height: 657px;
-  width: 1380px;
-  background-color: rgba(0, 0, 0, 0.7);
-  justify-content: center;
-  align-items: center;
-}*/
-
-#gameover {
+#resets{
     display: none;
     background-color: rgb(0, 0, 0, 0.7);
-    margin: -150px -40px;
-    height: 667px;
-    width: 1371.5px;
+    margin: -690px -40px;
+    height: 800px;
 }
 
 #gameover>button {
