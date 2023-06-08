@@ -116,7 +116,7 @@ egg.addEventListener('click', function () {
    } else {
       lives = 0;
       resets.style.display = 'block';
-
+      document.getElementById("playfire").src ="assets/firework.gif";
       // gameOver sound
       let gameOver_sound = new Audio('assets/sounds/egg.m4a');
       gameOver_sound.play();
