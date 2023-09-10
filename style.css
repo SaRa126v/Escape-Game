@@ -6,6 +6,8 @@ body {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    /* stop selection */
+    user-select: none;
 }
 
 /* game state.................................. */
@@ -160,4 +162,6 @@ header {
     border: none;
 }
 
-/* ***************************************************************** */
+.bomb {
+    width: 60px;
+}
