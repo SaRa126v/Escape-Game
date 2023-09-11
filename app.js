@@ -26,7 +26,13 @@ window.addEventListener("keydown", (e) => {
       egg.style.left = parseInt(egg.style.left) + pace + "px";
       break;
   }
+
+  const eggPosition = egg.getBoundingClientRect();
+  console.log(eggPosition);
+  return eggPosition;
 });
+
+
 
 // speed up with '+' button
 document.querySelector("#addBtn").addEventListener("click", () => {
@@ -105,17 +111,58 @@ egg.addEventListener("click", function () {
 // ۵) فورایچ: پوزیشن پلیراول رو بگیره و با مقدارهای ارایه مقایسه کنه اگ یکی بود از جونش کم کنه
 // ۶)از کنوس استفاده کن ک پلیر از صفحه نزنه بیرون.
 
-document.addEventListener("click", (e) => {
-  console.log(e.target);
-  const bomb = document.createElement("img");
-  bomb.src = "assets/bomb.png";
-  bomb.className = "bomb";
-  bomb.style.position = "absolute";
-  // bomb.style.top = (e.pageX - 25) + "px";
-  // bomb.style.left = (e.pageX - 25) + "px";
 
-  bomb.style.top = e.pageX + "px";
-  bomb.style.left = e.pageX + "px";
 
-  document.querySelector("#container").appendChild(bomb);
+
+// adding up to 5 bombs in the page....................
+
+// bomb storage
+const bombStorage = [];
+
+const container = document.querySelector("#container");
+
+container.addEventListener("click", (e) => {
+
+  // limiting & storing the bomb
+if (bombStorage.length < 5) {
+  // creating a bomb
+    const bomb = document.createElement("img");
+    bomb.src = "assets/bomb.png";
+    bomb.className = "bomb";
+
+  // bomb position
+    bomb.style.position = "absolute";
+    bomb.style.top = e.offsetY + "px";
+    bomb.style.left = e.offsetX + "px";
+  
+    // adding the bomb in the page
+    container.appendChild(bomb);
+  
+   // adding the bomb in the storage 
+   const bombPosition = bomb.getBoundingClientRect();
+      bombStorage.push(bombPosition);
+
+    console.log(bombStorage);
+    console.log(bombPosition);
+}
 });
+
+
+// function elementPosition(element) {
+//   const position = {
+//     top:element.getBoundingClientRect().top,
+//     right:element.getBoundingClientRect().right,
+//     left:element.getBoundingClientRect().left,
+//     bottom:element.getBoundingClientRect().bottom,
+//   }
+// return position;
+// }
+
+
+
+// search these more...................................
+  // console.log(e.pageX);
+  // console.log(e.clientX);
+  // console.log(e.offsetX);
+  // console.log(e.target.getBoundingClientRect().x);
+  // ...................................................
