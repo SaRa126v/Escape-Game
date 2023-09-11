@@ -27,9 +27,10 @@ window.addEventListener("keydown", (e) => {
       break;
   }
 
-  const eggPosition = egg.getBoundingClientRect();
-  console.log(eggPosition);
-  return eggPosition;
+  // getting the egg position with each movement
+  // const eggPosition = egg.getBoundingClientRect();
+  // console.log(eggPosition);
+  // return eggPosition;
 });
 
 
@@ -112,57 +113,36 @@ egg.addEventListener("click", function () {
 // ۶)از کنوس استفاده کن ک پلیر از صفحه نزنه بیرون.
 
 
+// // adding up to 5 bombs in the page....................
 
+// // bomb storage
+// const bombStorage = [];
 
-// adding up to 5 bombs in the page....................
+// const container = document.querySelector("#container");
 
-// bomb storage
-const bombStorage = [];
+// container.addEventListener("click", (e) => {
 
-const container = document.querySelector("#container");
+//   // limiting & storing the bomb
+// if (bombStorage.length < 5) {
+//   // creating a bomb
+//     const bomb = document.createElement("img");
+//     bomb.src = "assets/bomb.png";
+//     bomb.className = "bomb";
 
-container.addEventListener("click", (e) => {
-
-  // limiting & storing the bomb
-if (bombStorage.length < 5) {
-  // creating a bomb
-    const bomb = document.createElement("img");
-    bomb.src = "assets/bomb.png";
-    bomb.className = "bomb";
-
-  // bomb position
-    bomb.style.position = "absolute";
-    bomb.style.top = e.offsetY + "px";
-    bomb.style.left = e.offsetX + "px";
+//   // bomb position
+//     bomb.style.position = "absolute";
+//     bomb.style.top = e.offsetY + "px";
+//     bomb.style.left = e.offsetX + "px";
   
-    // adding the bomb in the page
-    container.appendChild(bomb);
+//     // adding the bomb in the page
+//     container.appendChild(bomb);
   
-   // adding the bomb in the storage 
-   const bombPosition = bomb.getBoundingClientRect();
-      bombStorage.push(bombPosition);
+//    // adding the bomb in the storage 
+//    const bombPosition = bomb.getBoundingClientRect();
+//       bombStorage.push(bombPosition);
 
-    console.log(bombStorage);
-    console.log(bombPosition);
-}
-});
-
-
-// function elementPosition(element) {
-//   const position = {
-//     top:element.getBoundingClientRect().top,
-//     right:element.getBoundingClientRect().right,
-//     left:element.getBoundingClientRect().left,
-//     bottom:element.getBoundingClientRect().bottom,
-//   }
-// return position;
+//     console.log(bombStorage);
+//     console.log(bombPosition);
 // }
+// });
 
-
-
-// search these more...................................
-  // console.log(e.pageX);
-  // console.log(e.clientX);
-  // console.log(e.offsetX);
-  // console.log(e.target.getBoundingClientRect().x);
-  // ...................................................
